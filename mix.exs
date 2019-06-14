@@ -7,7 +7,7 @@ defmodule Coherence.Mixfile do
     [
       app: :coherence,
       version: @version,
-      elixir: "~> 1.7",
+      elixir: "~> 1.8",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       build_embedded: Mix.env() == :prod,
@@ -60,7 +60,7 @@ defmodule Coherence.Mixfile do
       {:earmark, "~> 1.2", only: :dev, override: true},
       {:postgrex, "~> 0.14", only: :test},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
-      {:credo, "~> 0.8", only: [:dev, :test]},
+      {:credo, "~> 1.1", only: [:dev, :test]},
       {:plug, "~> 1.8"},
       {:jason, "~> 1.0"}
     ]
