@@ -12,8 +12,6 @@ config :coherence, TestCoherenceWeb.Endpoint,
 config :coherence, ecto_repos: [TestCoherence.Repo]
 
 config :coherence, TestCoherence.Repo,
-  username: System.get_env("DB_USERNAME") || "postgres",
-  password: System.get_env("DB_PASSWORD") || "postgres",
   database: "coherence_test",
   hostname: System.get_env("DB_HOSTNAME") || "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

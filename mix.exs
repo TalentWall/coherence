@@ -56,12 +56,12 @@ defmodule Coherence.Mixfile do
       {:phoenix_swoosh, "~> 0.2"},
       {:timex, "~> 3.3"},
       {:floki, "~> 0.19", only: :test},
-      {:ex_doc, "~> 0.18.0", only: :dev},
+      {:ex_doc, "~> 0.18", only: :dev},
       {:earmark, "~> 1.2", only: :dev, override: true},
-      {:postgrex, "~> 0.14.0", only: :test},
+      {:postgrex, "~> 0.14", only: :test},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
       {:credo, "~> 0.8", only: [:dev, :test]},
-      {:plug, "~> 1.7.1"},
+      {:plug, "~> 1.8"},
       {:jason, "~> 1.0"}
     ]
   end
